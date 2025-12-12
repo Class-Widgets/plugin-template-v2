@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/images/logo.png" width="15%" alt="Class Widgets 2">
+<img src="icon.png" width="15%" alt="Class Widgets 2">
 <h1>Class Widgets 2 Plugin Template</h1>
 
 <p>Class Widgets 2 插件模板</p>
@@ -7,7 +7,6 @@
 <!--[![当前版本](https://img.shields.io/github/v/release/Class-Widgets/plugin-template-v2?style=for-the-badge&color=purple&label=%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC)](https://github.com/Class-Widgets/plugin-template-v2/releases/latest)--->
 
 [![星标](https://img.shields.io/github/stars/Class-Widgets/plugin-template-v2?style=for-the-badge&color=orange&label=%E6%98%9F%E6%A0%87)](https://github.com/Class-Widgets/plugin-template-v2)
-[![最新版本](https://img.shields.io/github/v/tag/Class-Widgets/plugin-template-v2?include_prereleases&label=%E5%BD%93%E5%89%8D%E6%B5%8B%E8%AF%95%E7%89%88&color=yellow&style=for-the-badge)](https://github.com/Class-Widgets/plugin-template-v2/releases)
 [![开源许可](https://img.shields.io/badge/license-MIT-blue.svg?label=%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF%E8%AF%81&style=for-the-badge)](https://github.com/Class-Widgets/plugin-template-v2)
 [![下载量](https://img.shields.io/github/downloads/Class-Widgets/plugin-template-v2/total.svg?label=%E4%B8%8B%E8%BD%BD%E9%87%8F&color=green&style=for-the-badge)](https://github.com/Class-Widgets/plugin-template-v2)
 
