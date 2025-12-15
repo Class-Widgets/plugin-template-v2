@@ -46,3 +46,5 @@ Import the packed plugin in "Settings" -> "Plugins" in Class Widgets 2
 本项目基于 MIT 协议开源，详情请参阅 [LICENSE](https://github.com/rinlit-233-shiroko/class-widgets-2-plugin-template/blob/main/LICENSE) 文件。
 
 The project is licensed under the MIT license. Please refer to the [LICENSE](https://github.com/rinlit-233-shiroko/class-widgets-2-plugin-template/blob/main/LICENSE) file for details.
+
+[test](icon.png)
