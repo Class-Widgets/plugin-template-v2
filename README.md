@@ -37,6 +37,23 @@ cw-plugin-pack
 3. 在 Class Widgets 2 -> "设置" -> "插件"中导入打包好的插件 /
 Import the packed plugin in "Settings" -> "Plugins" in Class Widgets 2
 
+## 自动发布 / Auto Release
+通过 GitHub Actions 实现自动发布功能，推送 tag 时自动生成 release。
+
+### 使用方法 / How to Use
+1. 推送 tag 到 GitHub（格式：`v*.*.*`）：
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+2. GitHub Actions 会自动：
+   - 使用 `cw-plugin-pack` 打包插件
+   - 生成 `.cwplugin` 和 `.zip` 两种格式
+   - 创建 GitHub Release 并上传发布包
+
+3. 在 GitHub Release 页面下载发布包
+
 ## 致谢 / Acknowledgements
 ### 引用资源 / Credits
 - [Class Widgets 2](https://github.com/rinlit-233-shiroko/class-widgets-2)
