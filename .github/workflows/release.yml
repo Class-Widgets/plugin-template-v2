@@ -22,6 +22,17 @@ jobs:
           python-version: '>=3.9'
           cache: 'pip'
       
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+      
+      - name: Install git-cliff
+        run: |
+          cargo install git-cliff
+      
       - name: Install dependencies
         run: |
           pip install -e .
@@ -37,6 +48,12 @@ jobs:
         id: get_version
         run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
       
+      - name: Generate changelog with git-cliff
+        id: generate_changelog
+        run: |
+          git-cliff --config .git-cliff.toml --tag v${{ env.VERSION }} > CHANGELOG.md
+          echo "CHANGELOG=$(cat CHANGELOG.md)" >> $GITHUB_ENV
+      
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v2
@@ -47,4 +64,5 @@ jobs:
           files:
             - "*.cwplugin"
             - "*.zip"
-          generate_release_notes: true
+          body: ${{ env.CHANGELOG }}
+          generate_release_notes: false
